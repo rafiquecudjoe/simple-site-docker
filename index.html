@@ -1,6 +1,416 @@
-<html>
-     <body>
-        <p> My name is Rafique Adam Cudjoe and i am part of the Azubi Cloud Engineering Class of 2023</p>
-     </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Funding Pro</title>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230630185404">
+	<!-- &display=swap -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&_v=20230630185404" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div id="header" class="header__container">
+		<div class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></div>
+		<a href="tel:8884950312" class="header__number">888-495-0312</a>
+	</div>
+</header>
+		<main class="page ">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__wrapper">
+						<div class="main__progress progress-main">
+							<div class="progress-main__item _complite">
+
+							</div>
+							<div class="progress-main__item">
+
+							</div>
+							<div class="progress-main__item">
+
+							</div>
+						</div>
+						<div class="slider-main__form">
+							<div id="quiz-modal" class="modal show">
+								<div class="modal-body">
+									<form action="#" id="quiz-form">
+										<fieldset style="display: none;">
+											<div class="">
+												<h1 class="main__title">Choose your funding amount</h1>
+												<h2 class="main__value">
+													$<span id="loan-slider-value"
+														data-values="10000, 20000, 30000, 40000, 50000, 100000, 200000, 300000, 400000, 500000, 1000000, 2000000, 3000000, 4000000, 5000000">10,000</span>
+												</h2>
+												<div class="main__slider slider-main">
+													<div id="loan-slider" class="slider-main__slider"></div>
+													<div class="slider-main__values">
+														<div class="slider-main__value">$10,000</div>
+														<div class="slider-main__value">$5,000,000</div>
+													</div>
+													<div class="form-checks">
+														<div class="form-check">
+
+															<button
+																class="next-step btn btn-primary slider-main__button"
+																type="button">Continue</button>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset style="display: none;">
+											<div class="">
+												<p class="text-lg fw-medium money-text">Do you make $5,000/month in
+													revenue or
+													more?</p>
+												<div class="form-checks">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="revenue"
+															id="revenue_Yes" value="yes">
+														<label class="form-check-label slider-main__button"
+															for="revenue_Yes"> Yes
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="revenue"
+															id="revenue_No" value="no">
+														<label class="form-check-label slider-main__button"
+															for="revenue_No"> No
+														</label>
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset style="display: none;">
+											<h4 class="form-inputs__title">Contact Information</h4>
+											<div class="form-inputs">
+												<div class="">
+													<p class="text-lg fw-medium">Company *</p>
+													<input type="text" class="form-control" id="company" name="company"
+														required="">
+												</div>
+												<div class="">
+													<p class="text-lg fw-medium">Name *</p>
+													<input type="text" class="form-control" id="firstName"
+														name="firstName" required="">
+
+												</div>
+												<div class="">
+													<p class="text-lg fw-medium">Email *</p>
+													<input type="text" class="form-control" id="email" name="email"
+														required="">
+
+												</div>
+												<div class="">
+													<p class="text-lg fw-medium">Phone *</p>
+													<input type="text" class="form-control" id="phone" name="phone"
+														required="">
+												</div>
+											</div>
+											<p class="form-inputs__disclaimer">By clicking "Submit" you consent to
+												allowing JG Wentworth to contact you as
+												described below.</p>
+											<button class="btn btn-primary submit-btn slider-main__button"
+												type="submit">Submit</button>
+											<p class="form-inputs__disclaimer">By submitting this form, I am providing
+												JG Wentworth, or a third party on its
+												behalf, with express written consent to
+												contact me regarding product offerings by SMS/text messages or by using
+												an auto dialer (or automated means) at the
+												phone
+												number(s) provided and such consent is not a condition of a purchase. I
+												also consent and agree to JG Wentworth’s <a href="">Privacy
+													Policy</a> and <a href="">Terms of Use</a></p>
+
+										</fieldset>
+										<!-- <fieldset style="display: none;">
+												<div class="">
+													<p class="text-lg fw-medium">What's your first name?</p>
+													<input type="text" class="form-control" id="firstName"
+														name="firstName" placeholder="First name" required="">
+													<button class="next-step btn btn-primary"
+														type="button">Next</button>
+												</div>
+											</fieldset>
+											<fieldset style="display: none;">
+												<div class="">
+													<p class="text-lg fw-medium">What's your email?</p>
+													<input type="text" class="form-control" id="email" name="email"
+														placeholder="Email address" required="">
+													<button class="next-step btn btn-primary"
+														type="button">Next</button>
+												</div>
+											</fieldset>
+											<fieldset style="display: none;">
+												<div class="">
+													<p class="text-lg fw-medium">What's your phone number?</p>
+													<input type="text" class="form-control" id="phone" name="phone"
+														placeholder="Phone number" required="">
+													<button class="btn btn-primary submit-btn"
+														type="submit">Submit</button>
+												</div>
+											</fieldset> -->
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="quiz-modal-overlay"></div>
+					</div>
+				</div>
+			</section>
+			<section class="help">
+				<div class="help__container">
+					<h3 class="help__title title">
+						If you are $10,000 or more in debt — JG Wentworth can help
+					</h3>
+					<div class="help__description description-help">
+						<div class="description-help__text text">Many of our customers are able to pay off their debts
+							in two to four years.*
+						</div>
+						<ul class="description-help__list">
+							<li class="description-help__item">
+								<div class="description-help__icon"><img src="img/icons/check-mark.svg"
+										alt="check-mark"></div>
+								<div class="description-help__point">Credit Cards</div>
+							</li>
+							<li class="description-help__item">
+								<div class="description-help__icon"><img src="img/icons/check-mark.svg"
+										alt="check-mark"></div>
+								<div class="description-help__point">Personal Loans</div>
+							</li>
+							<li class="description-help__item">
+								<div class="description-help__icon"><img src="img/icons/check-mark.svg"
+										alt="check-mark"></div>
+								<div class="description-help__point">Medical Bills</div>
+							</li>
+						</ul>
+						<div class="description-help__text text">Through our program, only unsecured debts qualify.
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__header">
+						<h3 class="about__title title">A team who’s working for you</h3>
+						<div class="about__subtitle text">Our staff has a history of successfully negotiating with all
+							types of unsecured creditors.﻿ Through our program, we
+							negotiate with your creditors — which means you could potentially pay less than the total
+							amount you owe.</div>
+					</div>
+					<div class="about__icons">
+						<div class="about__icon"><picture><source srcset="img/about/about__image_01.webp" type="image/webp"><img src="img/about/about__image_01.png" alt="about-icon"></picture></div>
+						<div class="about__icon"><picture><source srcset="img/about/about__image_02.webp" type="image/webp"><img src="img/about/about__image_02.png" alt="about-icon"></picture></div>
+						<div class="about__icon"><picture><source srcset="img/about/about__image_03.webp" type="image/webp"><img src="img/about/about__image_03.png" alt="about-icon"></picture></div>
+					</div>
+				</div>
+
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<h3 class="contact__title title">Talk to a specialist today
+					</h3>
+					<div class="contact__subtitle text">
+						No more fear opening your next credit card bill,
+						or hesitation answering the phone.
+					</div>
+					<a href="" class="contact__button">Take the First Step - Contact Us Today</a>
+					<div class="contact__image"><picture><source srcset="img/contact/contact__image_01.webp" type="image/webp"><img src="img/contact/contact__image_01.png" alt="contact__image"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="numbers">
+				<div class="numbers__container">
+					<h3 class="numbers__title title">JG Wentworth, it's all in our numbers
+					</h3>
+					<div class="numbers__columns columns-numbers">
+						<article class="columns-numbers__column">
+							<h4 class="columns-numbers__title">Years of experience</h4>
+							<div class="columns-numbers__number">30</div>
+						</article>
+						<article class="columns-numbers__column">
+							<h4 class="columns-numbers__title">Number of Customers
+							</h4>
+							<div class="columns-numbers__number">22,542</div>
+						</article>
+						<article class="columns-numbers__column">
+							<h4 class="columns-numbers__title">Total Debt Enrolled</h4>
+							<div class="columns-numbers__number">$548M</div>
+						</article>
+					</div>
+					<a href="#header" class="numbers__link">Start today - talk to a debt specialist</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<!-- <div class="footer__head head-footer">
+			<div class="head-footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></div>
+			<div class="social">
+				<a href="" class="social__item"><img src="img/icons/facebook.svg" alt="facebook"></a>
+				<a href="" class="social__item"><img src="img/icons/twitter.svg" alt="twitter"></a>
+				<a href="" class="social__item"><img src="img/icons/youtube.svg" alt="youtube"></a>
+				<a href="" class="social__item"><img src="img/icons/pinterest.svg" alt="pinterest"></a>
+			</div>
+		</div>
+		<div class="footer__body body-footer">
+			<aside class="body-footer__aside">
+				<h4 class="body-footer__title">Debt Solutions
+				</h4>
+				<address class="body-footer__adress">
+					1200 Morris Drive
+					Chesterbrook, PA 19087
+				</address>
+				<nav class="body-footer__menu menu-footer">
+					<h5 class="menu-footer__title">Legal</h5>
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item">
+							<a href="" class="menu-footer__link">Contact Us</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="" class="menu-footer__link">Privacy Policy</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="" class="menu-footer__link">Terms Of Use</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<div class="body-footer__content">
+				<p>
+					Debt solutions program provided by JGW Debt Settlement, LLC (“JGW” of “Us”). JGW offers this program
+					in the following
+					states: AL, AK, AZ, AR, CA, CO, FL, ID, IN, IA, KY, LA, MD, MA, MI, MS, MO, MT, NE, NM, NY, NC, OK,
+					PA, SD, TN, TX, UT,
+					VA, DC, and WI. If a consumer residing in CT, GA, HI, IL, KS, ME, NH, NJ, OH, RI, SC and VT contacts
+					Us we may connect
+					them with a law firm that provides debt solutions services in their state. JGW is
+					licensed/registered to provide debt
+					solutions services in states where licensing/registration is required.
+				</p>
+				<p>
+					Debt solutions program results will vary by individual situation. As such, debt solutions services
+					are not appropriate
+					for everyone. Not all debts are eligible for enrollment. Not all individuals who enroll complete our
+					program for various
+					reasons, including their ability to save sufficient funds. Savings resulting from successful
+					negotiations may result in
+					tax consequences, please consult with a tax professional regarding these consequences. The use of
+					the debt solutions
+					services and the failure to make payments to creditors: (1) Will likely adversely affect your
+					creditworthiness (credit
+					rating/credit score) and make it harder to obtain credit; (2) May result in your being subject to
+					collections or being
+					sued by creditors or debt collectors; and (3) May increase the amount of money you owe due to the
+					accrual of fees and
+					interest by creditors or debt collectors. Failure to pay your monthly bills in a timely manner will
+					result in increased
+					balances and will harm your credit rating. Not all creditors will agree to reduce principal balance,
+					and they may pursue
+					collection, including lawsuits. JGW’s fees are calculated based on a percentage of the debt enrolled
+					in the program.
+					Read and understand the program agreement prior to enrollment.
+				</p>
+				<p>
+					JG Wentworth does not pay or assume any debts or provide legal, financial, tax advice, or credit
+					repair services. You
+					should consult with independent professionals for such advice or services. Please consult with a
+					bankruptcy attorney for
+					information on bankruptcy.
+				</p>
+				<p>
+					Client Grievance Procedure: If you are unable to resolve an issue with your Debt Specialist or
+					Client Services
+					Representative, please request to speak with a manager. If you cannot reach a resolution with a
+					manager, please escalate
+					communication via email at <a href="mailto:complaint@jgwentworth.com">complaint@jgwentworth.com </a>
+					or direct mail to the business address listed on our contact page.
+
+				</p>
+			</div>
+		</div>
+		<div class="social">
+			<a href="" class="social__item"><img src="img/icons/facebook.svg" alt="facebook"></a>
+			<a href="" class="social__item"><img src="img/icons/twitter.svg" alt="twitter"></a>
+			<a href="" class="social__item"><img src="img/icons/youtube.svg" alt="youtube"></a>
+			<a href="" class="social__item"><img src="img/icons/pinterest.svg" alt="pinterest"></a>
+		</div>
+		<div class="footer__copy">Copyright © 2023 The JG Wentworth Company. All rights reserved -->
+		<div class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></div>
+		<div class="footer__menu menu-footer">
+			<ul class="menu-footer__list">
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Contact Us</a>
+				</li>
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Privacy Policy</a>
+				</li>
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Terms Of Service</a>
+				</li>
+			</ul>
+
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__text">
+				<p>Loans Subject to Lender Approval. Depending on the state where your business is located and other
+					attributes
+					of the
+					loan, your business loan may be issued by IOU Financial. Your loan agreement will identify the loan
+					issuer
+					prior to your
+					signing.
+				</p>
+				<div class="footer__copy">Zing Funding® is a Registered Trademark. All rights reserved.</div>
+			</div>
+			<div class="social">
+				<a class="social__item" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="facebook">
+						<path
+							d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+						</path>
+					</svg>
+				</a>
+				<a class="social__item" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="twitter">
+						<path
+							d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+						</path>
+					</svg>
+				</a>
+				<a class="social__item" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="linkedin">
+						<path
+							d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+						</path>
+					</svg>
+				</a>
+				<a class="social__item" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="instagram">
+						<path
+							d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+						</path>
+					</svg>
+				</a>
+				<a class="social__item" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="youtube">
+						<path
+							d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+						</path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="js/nouislider.min.js?_v=20230630185404"></script>
+	<script src="js/app.min.js?_v=20230630185404"></script>
+</body>
 
 </html>
